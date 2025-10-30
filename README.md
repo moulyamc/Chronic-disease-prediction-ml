@@ -41,24 +41,24 @@ git clone https://github.com/moulyamc/Chronic-disease-prediction-ml.git
 cd Chronic-disease-prediction-ml
 ```
 
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 Make sure Python 3.x is installed, then run:
 ```bash
 pip install -r requirements.txt
 ```
 
-3️⃣ Train the model
+### 3️⃣ Train the model
 This will create model.pkl automatically:
 ```bash
 python train_model.py
 ```
 
-4️⃣ Run the GUI
+### 4️⃣ Run the GUI
 ```bash
 python gui_app.py
 ```
 
-5️⃣ Use the app
+### 5️⃣ Use the app
 - Select symptoms
 - Click Predict
 - View the predicted disease on screen
