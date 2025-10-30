@@ -46,3 +46,49 @@ The GUI allows users to:
 ```bash
 git clone https://github.com/moulyamc/Chronic-disease-prediction-ml.git
 cd Chronic-disease-prediction-ml
+```
+
+2️⃣ Install dependencies
+Make sure Python 3.x is installed, then run:
+```bash
+pip install -r requirements.txt
+```
+
+3️⃣ Train the model
+This will create model.pkl automatically:
+```bash
+python train_model.py
+```
+
+4️⃣ Run the GUI
+```bash
+python gui_app.py
+```
+
+5️⃣ Use the app
+- Select symptoms
+- Click Predict
+- View the predicted disease on screen
+
+## 📂 Project Structure
+```bash
+Chronic-disease-prediction-ml/
+│
+├── gui_app.py              # Tkinter GUI for user input and prediction
+├── train_model.py          # Script for model training and saving model.pkl
+├── training_data.csv       # Dataset used to train the Naive Bayes model
+├── model.pkl               # Saved trained model (auto-generated after training)
+├── requirements.txt        # Required Python libraries
+├── README.md               # Project documentation
+│
+└── venv/                   # (Optional) Virtual environment folder
+```
+
+
+
+
+
+
+
+
+
