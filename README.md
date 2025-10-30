@@ -1,55 +1,48 @@
-# Chronic Disease Prediction using Machine Learning
+# 🧬 Chronic Disease Prediction using Machine Learning  
 
-This project predicts diseases based on user-selected symptoms using a **Gaussian Naive Bayes** machine-learning model.  
-It includes a **Tkinter graphical interface (GUI)** that allows users to select symptoms and instantly see the predicted disease.
+This project predicts the **risk of chronic diseases** based on patient symptoms and health data using a **Gaussian Naive Bayes** machine learning model.  
 
----
+It includes:  
+- 🧠 A **machine learning model** trained on medical data  
+- 🧩 A **Tkinter graphical user interface (GUI)** for symptom-based prediction  
+- 📊 A clear, simple workflow for users and reviewers to understand and run easily  
 
-## Features
-- Uses a pre-trained **Naive Bayes model (model.pkl)**  
-- **Tkinter GUI** for easy disease prediction  
-- Dataset: 4920 records, 132 features, 41 possible diseases  
-- Clean, simple, and reproducible training script (`train_model.py`)
+## 🚀 Project Overview  
 
----
+This system helps users predict diseases by selecting symptoms from dropdown menus.  
+The model was trained using a dataset containing multiple diseases and their associated symptoms.  
 
-## How It Works
-1. `train_model.py` trains a Naive Bayes model using `training_data.csv`
-2. The model is saved as `model.pkl`
-3. `gui_app.py` loads this model and predicts disease based on selected symptoms
+After training, the model can predict diseases such as:  
+- Diabetes  
+- Migraine  
+- GERD  
+- Tuberculosis  
+- Hypertension  
+- Typhoid  
+- Hepatitis, and more!  
 
----
+## 🧠 Machine Learning Details  
 
-## Run Instructions
+- **Algorithm used:** Gaussian Naive Bayes  
+- **Libraries:** scikit-learn, pandas, numpy, matplotlib, seaborn  
+- **Dataset:** Training dataset (`training_data.csv`) with symptoms and corresponding diseases  
+- **Output model:** `model.pkl` — a serialized trained model file  
 
-1. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+During testing, the model achieved:
+Accuracy: 1.00  
+Precision: 1.00  
+Recall: 1.00  
 
-2. **Run the GUI**
-   ```bash
-   python gui_app.py
-   ```
+## 🖥️ Graphical User Interface  
 
-3. *(Optional)* **Retrain the model**
-   ```bash
-   python train_model.py
-   ```
+The GUI allows users to:  
+- Select up to **5 symptoms** from dropdown menus  
+- Click the **Predict** button  
+- Instantly see the **predicted disease** below  
 
----
+## ⚙️ How to Run the Project  
 
-## Output
-When you run `gui_app.py`, a window titled  
-**“Chronic Disease Prediction using Machine Learning”** opens.  
-Select symptoms from dropdowns → click **Predict** → see the predicted disease instantly.
-
----
-
-## Dependencies
-See `requirements.txt` for the complete list.
-
----
-
-## License
-This project is for educational and research purposes.
+### 1️⃣ Clone this repository
+```bash
+git clone https://github.com/moulyamc/Chronic-disease-prediction-ml.git
+cd Chronic-disease-prediction-ml
