@@ -19,7 +19,19 @@ This project predicts the **risk of chronic diseases** based on patient symptoms
   - numpy  
   - matplotlib  
   - seaborn  
-  - tkinter  
+  - tkinter 
+
+## 📂 Project Structure
+```bash
+Chronic-disease-prediction-ml/
+│
+├── gui_app.py              # Tkinter GUI for disease prediction
+├── train_model.py          # Trains and saves model.pkl
+├── training_data.csv       # Dataset for training
+├── model.pkl               # Saved trained model (after running train_model.py)
+├── requirements.txt        # Dependencies
+└── README.md               # Project documentation
+``` 
 
 ## ⚙️ Installation / Setup Instructions  
 
@@ -50,18 +62,6 @@ python gui_app.py
 - Select symptoms
 - Click Predict
 - View the predicted disease on screen
-
-## 📂 Project Structure
-```bash
-Chronic-disease-prediction-ml/
-│
-├── gui_app.py              # Tkinter GUI for disease prediction
-├── train_model.py          # Trains and saves model.pkl
-├── training_data.csv       # Dataset for training
-├── model.pkl               # Saved trained model (after running train_model.py)
-├── requirements.txt        # Dependencies
-└── README.md               # Project documentation
-```
 
 ## 📊 Results
 After training, the model achieved perfect classification on the dataset:
